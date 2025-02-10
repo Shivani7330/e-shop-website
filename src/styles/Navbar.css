@@ -1,0 +1,153 @@
+/* General Navbar Styling */
+.navbar {
+    background-color: #2d2d2d; /* Dark background */
+    color: white;
+    padding: 1rem 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 50;
+  }
+  
+  .navbar-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* Logo Styling */
+  .navbar-logo {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: orange;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar-logo:hover {
+    color: #a3a3a3;
+  }
+  
+  /* Navigation Links */
+  .nav-links {
+
+    display: flex;
+    gap: 2rem;
+  }
+  
+  .nav-link {
+    font-size: 1rem;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-link:hover {
+    color: blue;
+  }
+  
+  .nav-item-count {
+    margin-left: 0.5rem;
+    color: white
+
+  }
+  
+  /* Search and Login Section */
+  .search-login {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .search-button {
+    font-size: 1.25rem;
+  
+    color: orange;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .search-button:hover {
+    color: blue;
+  }
+  
+  .search-input {
+    background-color: white;
+    color: black;
+    padding: 0.5rem;
+    border-radius: 0.375rem;
+    outline: none;
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .search-input:focus {
+    box-shadow: 0 0 0 2px #093bdf;
+  }
+  
+  .login-button {
+    background-color: orange;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 0.375rem;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .login-button:hover {
+    background-color: rgb(96, 96, 211);
+  }
+  
+  /* Mobile Styles */
+  @media (max-width: 768px) {
+    .nav-links {
+      display: none;
+    }
+  
+    .search-login {
+      gap: 1rem;
+      flex-grow: 1;
+      justify-content: flex-end;
+    }
+  
+    .search-input {
+      width: 150px;
+    }
+  
+    .nav-links.mobile-menu {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      position: absolute;
+      top: 60px;
+      right: 1.5rem;
+      background-color: #2d2d2d;
+      padding: 1rem;
+      border-radius: 8px;
+      width: 200px;
+    }
+  
+    .nav-links.mobile-menu a {
+      font-size: 1.2rem;
+    }
+  
+    .hamburger-menu {
+      display: block;
+      cursor: pointer;
+      margin-left: 1rem;
+    }
+  
+    .hamburger-menu div {
+      width: 25px;
+      height: 3px;
+      background-color: white;
+      margin: 5px;
+      transition: all 0.3s ease;
+    }
+  }
+  
